@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.19",
+    "express": "^4.18.1",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
   }
 }
