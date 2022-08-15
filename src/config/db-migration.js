@@ -1,8 +1,8 @@
 const Customer = require("../model/customer");
 
-const DbMigration = async () => {
+const DbMigration = async (db) => {
   //Register your models here
-  await Customer().sync();
+  await Customer(db).sync();
 };
 
 module.exports = DbMigration;

@@ -1,10 +1,9 @@
 const { DataTypes } = require("sequelize");
-const Config = require("../config/config");
-const { initDb } = require("../manager/infra.manager")(Config);
+const MST_CUSTOMER = "mst_customer";
 
-module.exports = () => {
-  return initDb().define(
-    "mst_customer",
+module.exports = (db) => {
+  return db.define(
+    MST_CUSTOMER,
     {
       id: {
         //untuk memberikan unique id pada colum id
